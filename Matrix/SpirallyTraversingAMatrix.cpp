@@ -26,6 +26,9 @@ class Solution
                     ans.push_back(matrix[bottom][i]);
                 }
                 bottom--;
+                
+            }
+            if(left<=right){
                 for(int i = bottom; i>=top; i--){
                     ans.push_back(matrix[i][left]);
                 }
