@@ -1,3 +1,4 @@
+//max selling price and minimum buying price
 class Solution {
 public:
     int maxProfit(vector<int> &prices) {
