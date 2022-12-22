@@ -1,3 +1,4 @@
+//count inversion
 long long int cot=0;
 void merge(long long int a[],long long int ls,long long int n1,long long int rs,long long int n2)
     {
