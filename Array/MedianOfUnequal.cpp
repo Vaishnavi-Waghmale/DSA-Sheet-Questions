@@ -1,3 +1,4 @@
+//two pointer approach
 class Solution{
     public:
     double MedianOfArrays(vector<int>& array1, vector<int>& array2)
