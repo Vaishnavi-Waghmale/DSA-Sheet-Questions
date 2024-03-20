@@ -1,0 +1,38 @@
+class Vehicle {
+ // Attributes for vehicles
+ private String brand;
+ private String model;
+ // Constructor
+ public Vehicle(String brand, String model) {
+ this.brand = brand;
+ this.model = model;
+ }
+ // Method to display vehicle information
+ public void displayInfo() {
+ System.out.println("Brand: " + brand);
+ System.out.println("Model: " + model);
+ }
+}
+class Car extends Vehicle {
+ // Attributes for cars
+ private int year;
+ // Constructor
+ public Car(String brand, String model, int year) {
+ super(brand, model); // Call superclass constructor
+ this.year = year;
+ }
+ //DisplayInfo method to include specific car information
+ @Override
+ public void displayInfo() {
+ super.displayInfo(); // Call superclass displayInfo
+ System.out.println("Year of car: " + year);
+ }
+}
+public class Main {
+ public static void main(String[] args) {
+ // Create a Car object
+ Car myCar = new Car("Mahindra", "XUV", 2024);
+ // Call the displayInfo method
+ myCar.displayInfo();
+ }
+}
